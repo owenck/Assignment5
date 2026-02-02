@@ -1,6 +1,21 @@
 ﻿@{
     ViewData["Title"] = "Calculator";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>This is my calculator page</p>
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+
+    <p>Become an expert like me at the amazing rate of $100 an hour!</p>
+</div>
+<br/>
+<form>
+    <p>How many hours would you like me to teach you?</p>
+    <input id="hours" type="number" />
+    <p>My hourly rate</p>
+    <input id="rate" value="100" readonly="true" />
+    <br/>
+    <button type="submit">Calculate</button>
+</form>
+
+<div id="result"></div>
+
